@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head> 
+    <meta charset="utf-8"> 
+    <title>fabric invoke</title> 
+    <script src="/javascripts/jquery.js"></script>
+
+    <style type="text/css">
+        input[type=text],
+        select {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        input[type=submit] {
+            width: 25%;
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type=reset] {
+            width: 100%;
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type=submit]:hover {
+            background-color: #45a049;
+        }
+
+        div {
+            position: fixed;
+            top: 90px;
+            right: 280px;
+            width: 50%;
+            border-radius: 5px;
+            background-color: #f2f2f2;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h2>添加数据到 fabric:</h2>
+
+        <form action="/invoke" method="post">
+
+            <label>转账人</label>
+            <input type="text" name="zhuanzhang" id="zhuanzhang">
+
+
+            <label>收款人</label>
+            <input type="text" name="shoukuan" id="shoukuan">
+
+
+            <label>金额</label>
+            <input type="text" name="money" id="money">
+
+
+            <!-- <div class="add-save"> -->
+            <input type="submit" value="发送" id="invoke">
+            <!-- </div> -->
+
+        </form>
+
+
+    </div>
+
+</body>
+<script src="/javascripts/invoke.js"></script>
+
+</html>
